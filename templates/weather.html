@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+  <!-- AMP Analytics -->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <style>
+  body {
+    background-color: lightcoral;
+  }
+
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Google Tag Manager -->
+  <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-PJXJTVGN&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
+<center>
+  <h1 style="background-color: lightgray;">Weather Details</h1>
+
+<!-- Weather Details-->
+
+   <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+ <p><strong>Condition:</strong> {{ weather.description }}</p>
+  <p><strong>Humidity:</strong> {{ weather.humidity }}%</p>
+<p><strong>Wind Speed:</strong> {{ weather.wind}} km/h</p>  
+
+<br>
+<!-- Navigation to other links -->
+<a href="/"><button>Home</button></a>
+<a href="/edu"><button>Education</button></a>
+<a href="/exp"><button>Work Experience</button></a> 
+<a href="/skills"><button>Skills</button></a>
+<a href="/art"><button>Articles</button></a>
+<a href="/links"><button>Links</button></a>
+<a href="/bmi"><button>BMI</button></a>
+
+    <br>
+      <br>
+      </center>
+  </body>
+</html>
